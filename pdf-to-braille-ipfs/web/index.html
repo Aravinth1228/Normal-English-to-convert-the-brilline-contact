@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PDF → Braille Uploader</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PDF → Braille Uploader</h1>
+    <p class="sub">Upload a normal English PDF. We'll extract text, convert to Braille, and pin all outputs to IPFS.</p>
+
+    <form id="uploadForm">
+      <div class="field">
+        <label>Title</label>
+        <input type="text" name="title" placeholder="Document title" required />
+      </div>
+      <div class="field">
+        <label>Author</label>
+        <input type="text" name="author" placeholder="Author name" required />
+      </div>
+      <div class="field">
+        <label>PDF File</label>
+        <input type="file" name="pdf" accept="application/pdf" required />
+      </div>
+      <button type="submit">Upload & Convert</button>
+    </form>
+
+    <div id="result" class="result hidden"></div>
+  </div>
+
+  <script src="/upload.js"></script>
+</body>
+</html>

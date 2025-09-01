@@ -1,0 +1,116 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background-color: #000; /* Black BG */
+  color: #b41414; /* Neon Green */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  border: 2px solid #00ff99;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 25px #00ff99;
+  text-align: center;
+  animation: glowPulse 2s infinite alternate;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #00ff99;
+  text-shadow: 0 0 10px #00ff99, 0 0 20px #00ffcc;
+}
+
+.sub {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #80ffcc;
+}
+
+.field {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 2px solid #00ff99;
+  border-radius: 8px;
+  background: black;
+  color: #00ff99;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 10px #00ff99 inset;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 15px #00ff99, 0 0 25px #00ffcc inset;
+  border-color: #00ffcc;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background: black;
+  border: 2px solid #00ff99;
+  border-radius: 8px;
+  color: #00ff99;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #00ff99;
+}
+
+button:hover {
+  background: #00ff99;
+  color: black;
+  text-shadow: 0 0 10px black;
+  box-shadow: 0 0 25px #00ff99, 0 0 40px #00ffcc;
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 2px solid #00ff99;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px #00ff99 inset;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #80ffcc;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Neon Glow Animation */
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 20px #00ff99;
+  }
+  to {
+    box-shadow: 0 0 40px #00ff99, 0 0 60px #00ffcc;
+  }
+}
